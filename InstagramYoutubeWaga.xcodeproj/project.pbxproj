@@ -11,6 +11,12 @@
 		EBCD2E7025EB5946007F0B28 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCD2E6F25EB5946007F0B28 /* ContentView.swift */; };
 		EBCD2E7225EB5947007F0B28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBCD2E7125EB5947007F0B28 /* Assets.xcassets */; };
 		EBCD2E7525EB5947007F0B28 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBCD2E7425EB5947007F0B28 /* Preview Assets.xcassets */; };
+		EBCD2E7F25EB5A38007F0B28 /* FormFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCD2E7E25EB5A38007F0B28 /* FormFieldView.swift */; };
+		EBCD2E8325EB5F6A007F0B28 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCD2E8225EB5F6A007F0B28 /* SignInView.swift */; };
+		EBCD2E8825EB94F5007F0B28 /* ButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCD2E8725EB94F5007F0B28 /* ButtonModifier.swift */; };
+		EBD3276B25F22B5D00738FA8 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD3276A25F22B5D00738FA8 /* SignUpView.swift */; };
+		EBE9887125F3127C00983CFD /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE9887025F3127C00983CFD /* ImagePicker.swift */; };
+		EBE9887625F3176F00983CFD /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE9887525F3176F00983CFD /* SignUpViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +26,12 @@
 		EBCD2E7125EB5947007F0B28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EBCD2E7425EB5947007F0B28 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EBCD2E7625EB5947007F0B28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBCD2E7E25EB5A38007F0B28 /* FormFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormFieldView.swift; sourceTree = "<group>"; };
+		EBCD2E8225EB5F6A007F0B28 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		EBCD2E8725EB94F5007F0B28 /* ButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonModifier.swift; sourceTree = "<group>"; };
+		EBD3276A25F22B5D00738FA8 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		EBE9887025F3127C00983CFD /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		EBE9887525F3176F00983CFD /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +64,10 @@
 		EBCD2E6C25EB5946007F0B28 /* InstagramYoutubeWaga */ = {
 			isa = PBXGroup;
 			children = (
+				EBE9887425F3175300983CFD /* ViewModels */,
+				EBE9886F25F3125C00983CFD /* Utilities */,
+				EBCD2E8625EB94D2007F0B28 /* Styles */,
+				EBCD2E8125EB5F57007F0B28 /* Views */,
 				EBCD2E6D25EB5946007F0B28 /* InstagramYoutubeWagaApp.swift */,
 				EBCD2E6F25EB5946007F0B28 /* ContentView.swift */,
 				EBCD2E7125EB5947007F0B28 /* Assets.xcassets */,
@@ -67,6 +83,48 @@
 				EBCD2E7425EB5947007F0B28 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EBCD2E7D25EB59CA007F0B28 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				EBCD2E7E25EB5A38007F0B28 /* FormFieldView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		EBCD2E8125EB5F57007F0B28 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EBCD2E7D25EB59CA007F0B28 /* Components */,
+				EBCD2E8225EB5F6A007F0B28 /* SignInView.swift */,
+				EBD3276A25F22B5D00738FA8 /* SignUpView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EBCD2E8625EB94D2007F0B28 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				EBCD2E8725EB94F5007F0B28 /* ButtonModifier.swift */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
+		EBE9886F25F3125C00983CFD /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				EBE9887025F3127C00983CFD /* ImagePicker.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		EBE9887425F3175300983CFD /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				EBE9887525F3176F00983CFD /* SignUpViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +198,12 @@
 			files = (
 				EBCD2E7025EB5946007F0B28 /* ContentView.swift in Sources */,
 				EBCD2E6E25EB5946007F0B28 /* InstagramYoutubeWagaApp.swift in Sources */,
+				EBE9887625F3176F00983CFD /* SignUpViewModel.swift in Sources */,
+				EBCD2E8325EB5F6A007F0B28 /* SignInView.swift in Sources */,
+				EBE9887125F3127C00983CFD /* ImagePicker.swift in Sources */,
+				EBCD2E7F25EB5A38007F0B28 /* FormFieldView.swift in Sources */,
+				EBD3276B25F22B5D00738FA8 /* SignUpView.swift in Sources */,
+				EBCD2E8825EB94F5007F0B28 /* ButtonModifier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
